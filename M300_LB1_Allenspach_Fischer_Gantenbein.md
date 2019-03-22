@@ -1,4 +1,4 @@
-# M300 - Dokumentation von Dennis Allenspach, Jenifer Fischer &amp; Jan Gantenbein
+# M300 - Dokumentation von Dennis Allenspach, Jennifer Fischer &amp; Jan Gantenbein
 Im Modul 300 wurde uns die Arbeit mit Containers und Virtuellen Maschienen näher gebracht.
 ## Auftrag
 Unser Auftrag war es, verschiedene Services via Vagrant und GitHub zu realisieren. Mit Vagrant kann man mit einem Vagrant-File eine VM erstellen ohne irgendwelche        konfigurationen zu machen. Alles befindet sich in diesem File. IaC
@@ -8,7 +8,7 @@ Unser Auftrag war es, verschiedene Services via Vagrant und GitHub zu realisiere
 * Eigener Service auf Basis IaC implementieren (Note 5.0 – 5.5)
 * Projekt auf github Ablegen und Dokumentieren (Markdown) (Note 5.5 – 6.0)
 
-![Kompetenzen](https://github.com/Dionysos376/M300-Services/blob/master/Kompetenz_Bewertung.PNG)
+![Kompetenzen](https://github.com/Drasuk/M300-Services-LB1/blob/master/Kompetenz_Bewertung.PNG)
 
 ## Netzwerkplan
 ![Netzwerkplan](https://github.com/Dionysos376/M300-Services/blob/master/Netzwerkplan.PNG)
