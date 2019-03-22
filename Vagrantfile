@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   # NOTE: This will enable public access to the opened port
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+  # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine and only allow access
@@ -37,7 +37,9 @@ Vagrant.configure("2") do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  config.vm.network "public_network", ip: "10.71.13.3"
+  config.vm.network "public_network", ip: "10.71.13.12"
+  # config.vm.network "public_network"
+  
 
   # Share an additional folder to the guest VM. The first argument is
   # the path on the host to the actual folder. The second argument is
@@ -66,24 +68,19 @@ Vagrant.configure("2") do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
       sudo apt-get install -y python3-pip
-      pip3 install django
+	  sudo apt-get install ufw
+	  sudo ufw deny out to any
+	  sudo ufw allow 8000/tcp
+	  sudo ufw allow from 10.0.2.2 to any port 22
+	  pip3 install django
 	  pip3 install gunicorn==19.7.1
 	  pip3 install pytz==2017.3
-      python3
-      import django
-	  python3
-	  import gunicorn
-	  python3
-	  import pytz
 	  cd
 	  cd ..
 	  cd ..
-	  cd /vagrant/mysite
-      python3 manage.py migrate
-	  cd ..
-	  cd /github
-	  python3 manage.py migrate
-	  python3 manage.py runserver 0:8000
+	  cd /vagrant/github
+	  /usr/bin/python3 manage.py migrate
+	  /usr/bin/python3 manage.py runserver 0:8000
   #   apt-get update
   #   apt-get install -y apache2
   SHELL
