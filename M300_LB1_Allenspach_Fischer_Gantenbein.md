@@ -11,7 +11,7 @@ Unser Auftrag war es, verschiedene Services via Vagrant und GitHub zu realisiere
 ![Kompetenzen](https://github.com/Drasuk/M300-Services-LB1/blob/master/Kompetenz_Bewertung.PNG)
 
 ## Netzwerkplan
-![Netzwerkplan](https://github.com/Dionysos376/M300-Services/blob/master/Netzwerkplan.PNG)
+![Netzwerkplan](https://github.com/Drasuk/M300-Services-LB1/blob/master/Netzwerkplan.PNG)
 ## Unser Vorgehen
 Wir arbeiteten nach dem IPERKA System. Wir schauten uns den Auftrag genau an und informierten uns über die verschiedenen Services. Anschliessen planten wir unser Vorgehen. Die Vorgehensweise wurde vom Auftragsdokument übernommen, da dort alles genau beschrieben wurde. Wir arbeiteten somit das Skript durch. Wir hatten Startprobleme, da es einige Zeit gedauert hat Django korrekt aufzusetzen. Es gab Probleme mit Versionen, welche Unkompatibel waren und zusätzich noch mit dem Anbinden am Vagrant File. Am Ende konnten wir es mit einem kleinem Umweg lösen indem wir auf einer Ubuntu Box manuell per Shell die benötigten Packages installieren und die Webapplikation via einem synced Folder direkt rüber geladen haben. Die Konfiguration von Django war sehr schwierig und die Zeit reichte nicht aus um sich das benötigte Wissen anzueignen, deswegen haben wir eine bereits erstellte Grundkonfiguration für eine Webapplikation benützt und diese nach unseren Wünschen angepasst. 
 ## Github
